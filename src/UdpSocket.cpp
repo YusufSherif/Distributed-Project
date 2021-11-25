@@ -35,7 +35,7 @@ bool UDPSocket::initializeClient(char *_peerAddr, int _peerPort) {
 	bool error = bind(sock, (struct sockaddr *)&peerAddr, sizeof(_peerAddr));
 	return error;
 }
-int UDPSocket::writeToSocket(char *buffer, int maxBytes) {
+int UDPSocket::writeToSocket(const char *buffer, int maxBytes) {
 	size_t stringLength = strlen(buffer) + 1;
 	std::string buf(buffer);
 	int totalBytesSent = 0;

@@ -30,7 +30,7 @@ public:
 	char * getFilterAddress ();
 	virtual bool initializeServer (char * _myAddr, int _myPort);
 	virtual bool initializeClient (char * _peerAddr, int _peerPort);
-	int writeToSocket (char * buffer, int maxBytes );
+	int writeToSocket (const char * buffer, int maxBytes );
 	int writeToSocketAndWait (char * buffer, int maxBytes,int microSec );
 	int readFromSocketWithNoBlock (char * buffer, int maxBytes );
 	int readFromSocketWithTimeout (char * buffer, int maxBytes, int timeoutSec, int timeoutMilli);

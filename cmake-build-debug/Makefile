@@ -143,6 +143,33 @@ Project_2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/build
 .PHONY : Project_2/fast
 
+libs/Base64.o: libs/Base64.cpp.o
+
+.PHONY : libs/Base64.o
+
+# target to build an object file
+libs/Base64.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/libs/Base64.cpp.o
+.PHONY : libs/Base64.cpp.o
+
+libs/Base64.i: libs/Base64.cpp.i
+
+.PHONY : libs/Base64.i
+
+# target to preprocess a source file
+libs/Base64.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/libs/Base64.cpp.i
+.PHONY : libs/Base64.cpp.i
+
+libs/Base64.s: libs/Base64.cpp.s
+
+.PHONY : libs/Base64.s
+
+# target to generate assembly for a file
+libs/Base64.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/libs/Base64.cpp.s
+.PHONY : libs/Base64.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -341,6 +368,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Project_2"
+	@echo "... libs/Base64.o"
+	@echo "... libs/Base64.i"
+	@echo "... libs/Base64.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

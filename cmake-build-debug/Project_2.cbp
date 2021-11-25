@@ -98,6 +98,12 @@
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpSocket.h">
 			<Option target="Project_2"/>
 		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/Base64.cpp">
+			<Option target="Project_2"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/Base64.h">
+			<Option target="Project_2"/>
+		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/main.cpp">
 			<Option target="Project_2"/>
 		</Unit>

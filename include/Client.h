@@ -9,7 +9,7 @@ private:
 	UDPClientSocket * udpSocket;
 public:
 	Client(char * _hostname, int _port);
-	Message * execute(Message * _message);
+	Message execute(Message * _message);
 	~Client();
 };
 #endif // CLIENT_H
