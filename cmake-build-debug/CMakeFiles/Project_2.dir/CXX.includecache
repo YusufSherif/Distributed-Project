@@ -1,0 +1,64 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Client.h
+UdpClientSocket.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpClientSocket.h
+Message.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Message.h
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Message.h
+cstdio
+-
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Server.h
+Message.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Message.h
+UdpServerSocket.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpServerSocket.h
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpClientSocket.h
+UdpSocket.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpSocket.h
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpServerSocket.h
+UdpSocket.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpSocket.h
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpSocket.h
+pthread.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+netdb.h
+-
+netinet/in.h
+-
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Client.cpp
+../include/Client.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Client.h
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Server.cpp
+../include/Server.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Server.h
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpClientSocket.cpp
+../include/UdpClientSocket.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpClientSocket.h
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpServerSocket.cpp
+../include/UdpServerSocket.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpServerSocket.h
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpSocket.cpp
+../include/UdpSocket.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpSocket.h
+
