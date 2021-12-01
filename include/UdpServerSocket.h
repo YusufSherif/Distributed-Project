@@ -6,7 +6,7 @@ class UDPServerSocket : public UDPSocket
 {
 public:
 	UDPServerSocket ();
-	bool initializeServer (char * _myAddr, int _myPort);
+	bool initializeServer (const char *_myAddr, int _myPort);
 	~UDPServerSocket ( );
 };
 #endif // UDPSERVERSOCKET_H 

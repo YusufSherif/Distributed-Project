@@ -11,16 +11,24 @@ UdpClientSocket.h
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpClientSocket.h
 Message.h
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Message.h
+vector
+-
 
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Message.h
 cstdio
 -
+sstream
+-
+../libs/base64.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.h
 
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Server.h
 Message.h
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Message.h
 UdpServerSocket.h
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpServerSocket.h
+vector
+-
 
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpClientSocket.h
 UdpSocket.h
@@ -41,10 +49,50 @@ netdb.h
 -
 netinet/in.h
 -
+cstdio
+-
+stdlib.h
+-
+string
+-
+dns_util.h
+-
+cstring
+-
+unistd.h
+-
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.cpp
+base64.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.h
+algorithm
+-
+stdexcept
+-
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.h
+string
+-
+string_view
+-
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/main.cpp
+iostream
+-
+include/Client.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Client.h
+include/Server.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Server.h
 
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Client.cpp
 ../include/Client.h
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Client.h
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Message.cpp
+cstring
+-
+../include/Message.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Message.h
 
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Server.cpp
 ../include/Server.h

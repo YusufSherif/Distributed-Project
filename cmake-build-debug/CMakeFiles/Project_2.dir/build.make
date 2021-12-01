@@ -168,18 +168,44 @@ CMakeFiles/Project_2.dir/src/Server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_2.dir/src/Server.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Server.cpp" -o CMakeFiles/Project_2.dir/src/Server.cpp.s
 
-CMakeFiles/Project_2.dir/libs/Base64.cpp.o: CMakeFiles/Project_2.dir/flags.make
-CMakeFiles/Project_2.dir/libs/Base64.cpp.o: ../libs/Base64.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project_2.dir/libs/Base64.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_2.dir/libs/Base64.cpp.o -c "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/Base64.cpp"
+CMakeFiles/Project_2.dir/libs/base64.cpp.o: CMakeFiles/Project_2.dir/flags.make
+CMakeFiles/Project_2.dir/libs/base64.cpp.o: ../libs/base64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project_2.dir/libs/base64.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_2.dir/libs/base64.cpp.o -c "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.cpp"
 
-CMakeFiles/Project_2.dir/libs/Base64.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_2.dir/libs/Base64.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/Base64.cpp" > CMakeFiles/Project_2.dir/libs/Base64.cpp.i
+CMakeFiles/Project_2.dir/libs/base64.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_2.dir/libs/base64.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.cpp" > CMakeFiles/Project_2.dir/libs/base64.cpp.i
 
-CMakeFiles/Project_2.dir/libs/Base64.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_2.dir/libs/Base64.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/Base64.cpp" -o CMakeFiles/Project_2.dir/libs/Base64.cpp.s
+CMakeFiles/Project_2.dir/libs/base64.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_2.dir/libs/base64.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.cpp" -o CMakeFiles/Project_2.dir/libs/base64.cpp.s
+
+CMakeFiles/Project_2.dir/client.cpp.o: CMakeFiles/Project_2.dir/flags.make
+CMakeFiles/Project_2.dir/client.cpp.o: ../client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Project_2.dir/client.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_2.dir/client.cpp.o -c "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/client.cpp"
+
+CMakeFiles/Project_2.dir/client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_2.dir/client.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/client.cpp" > CMakeFiles/Project_2.dir/client.cpp.i
+
+CMakeFiles/Project_2.dir/client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_2.dir/client.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/client.cpp" -o CMakeFiles/Project_2.dir/client.cpp.s
+
+CMakeFiles/Project_2.dir/server.cpp.o: CMakeFiles/Project_2.dir/flags.make
+CMakeFiles/Project_2.dir/server.cpp.o: ../server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Project_2.dir/server.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_2.dir/server.cpp.o -c "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/server.cpp"
+
+CMakeFiles/Project_2.dir/server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_2.dir/server.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/server.cpp" > CMakeFiles/Project_2.dir/server.cpp.i
+
+CMakeFiles/Project_2.dir/server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_2.dir/server.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/server.cpp" -o CMakeFiles/Project_2.dir/server.cpp.s
 
 # Object files for target Project_2
 Project_2_OBJECTS = \
@@ -190,7 +216,9 @@ Project_2_OBJECTS = \
 "CMakeFiles/Project_2.dir/src/UdpServerSocket.cpp.o" \
 "CMakeFiles/Project_2.dir/src/Client.cpp.o" \
 "CMakeFiles/Project_2.dir/src/Server.cpp.o" \
-"CMakeFiles/Project_2.dir/libs/Base64.cpp.o"
+"CMakeFiles/Project_2.dir/libs/base64.cpp.o" \
+"CMakeFiles/Project_2.dir/client.cpp.o" \
+"CMakeFiles/Project_2.dir/server.cpp.o"
 
 # External object files for target Project_2
 Project_2_EXTERNAL_OBJECTS =
@@ -202,10 +230,12 @@ Project_2: CMakeFiles/Project_2.dir/src/UdpClientSocket.cpp.o
 Project_2: CMakeFiles/Project_2.dir/src/UdpServerSocket.cpp.o
 Project_2: CMakeFiles/Project_2.dir/src/Client.cpp.o
 Project_2: CMakeFiles/Project_2.dir/src/Server.cpp.o
-Project_2: CMakeFiles/Project_2.dir/libs/Base64.cpp.o
+Project_2: CMakeFiles/Project_2.dir/libs/base64.cpp.o
+Project_2: CMakeFiles/Project_2.dir/client.cpp.o
+Project_2: CMakeFiles/Project_2.dir/server.cpp.o
 Project_2: CMakeFiles/Project_2.dir/build.make
 Project_2: CMakeFiles/Project_2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Project_2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Project_2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project_2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

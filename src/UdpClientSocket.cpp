@@ -7,7 +7,7 @@
 UDPClientSocket::UDPClientSocket() {
 
 }
-bool UDPClientSocket::initializeClient(char *_peerAddr, int _peerPort) {
+bool UDPClientSocket::initializeClient(const char *_peerAddr, int _peerPort) {
 	return UDPSocket::initializeClient(_peerAddr, _peerPort);
 }
 UDPClientSocket::~UDPClientSocket() {

@@ -21,14 +21,14 @@ void UDPSocket::setFilterAddress(char *_filterAddress) {
 char *UDPSocket::getFilterAddress() {
 	return nullptr;
 }
-bool UDPSocket::initializeServer(char *_myAddr, int _myPort) {
+bool UDPSocket::initializeServer(const char *_myAddr, int _myPort) {
 	myAddr.sin_family = AF_INET;
 	myAddr.sin_port = htons(_myPort);
 	inet_aton(_myAddr, &myAddr.sin_addr);
 	bool error = bind(sock, (struct sockaddr *)&myAddr, sizeof(myAddr));
 	return error;
 }
-bool UDPSocket::initializeClient(char *_peerAddr, int _peerPort) {
+bool UDPSocket::initializeClient(const char *_peerAddr, int _peerPort) {
 	peerAddr.sin_family = AF_INET;
 	peerAddr.sin_port = htons(_peerPort);
 	inet_aton(_peerAddr, &peerAddr.sin_addr);
@@ -62,24 +62,20 @@ int UDPSocket::readFromSocketWithNoBlock(char *buffer, int maxBytes) {
 	return msglen;
 }
 int UDPSocket::readFromSocketWithTimeout(char *buffer, int maxBytes, int timeoutSec, int timeoutMilli) {
-	try {
-		socklen_t len = sizeof(peerAddr);
-		signal(SIGALRM, sighandler);
-		ualarm(timeoutMilli * 1000 + timeoutSec * 1000000, 0);
-		int bytes = recvfrom(sock, buffer, maxBytes, 0, (sockaddr *)&peerAddr, &len);
-		if (bytes < 0)
-			if (errno == EINTR) {
-				/* timed out */
-			} else {
-				/* some other error */
-			}
-		else
-			/* no error or time out
-			- turn off alarm */
-			alarm(0);
-		return bytes;
-	} catch (std::runtime_error &e) {
-		return -1;
+	auto future = std::async(std::launch::async, &UDPSocket::readFromSocketWithBlock, this, buffer, maxBytes);
+
+	std::future_status status;
+
+	status = future.wait_for(std::chrono::milliseconds(10));
+
+	if (status == std::future_status::timeout) {
+		// verySlow() is not complete.
+		return 0;
+	} else if (status == std::future_status::ready) {
+		// verySlow() is complete.
+		// Get result from future (if there's a need)
+		int ret = future.get();
+		return ret;
 	}
 	return 0;
 }

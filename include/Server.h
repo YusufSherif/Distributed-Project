@@ -2,16 +2,18 @@
 #define SERVER_H
 #include "Message.h"
 #include "UdpServerSocket.h"
+#include <vector>
+#include <iostream>
 
 class Server
 {
 private:
 	UDPServerSocket * udpServerSocket;
 	Message * getRequest();
-	Message * doOperation();
+	void *doOperation(Message *_message);
 	void sendReply (Message * _message);
 public:
-	Server(char * _listen_hostname, int _listen_port);
+	Server(const char * _listen_hostAddr, int _listen_port);
 	void serveRequest();
 	~Server();
 };

@@ -4,17 +4,41 @@
 
 #include "../include/Client.h"
 
-Client::Client(char *_hostname, int _port) {
+Client::Client(const char *_hostAddr, int _port) {
 	udpSocket = new UDPClientSocket();
-	udpSocket->initializeClient(_hostname, _port);
+	udpSocket->initializeClient(_hostAddr, _port);
 }
-Message Client::execute(Message *_message) {
+Message* Client::execute(Message *_message) {
 	std::string msg = _message->marshal();
-	char *res = new char[1000];
+	std::cout << "Client: writing " + msg + " to udp socket" << std::endl;
 	udpSocket->writeToSocket(msg.c_str(), msg.length() + 1);
-	udpSocket->readFromSocketWithBlock(res, msg.length() + 1);
-	Message resultM = Message(10, res, msg.length() + 1, 0);
-	delete[] res;
+	std::cout << "Client: finished writing" << std::endl;
+
+	std::vector<char> buffer;
+	static const size_t MaxBytesPerRecv = 1024;
+	int bytesRead;
+	int i = 0;
+	int totalSize = 0;
+	do {
+		const size_t oldSize = buffer.size();
+
+		buffer.resize(oldSize + MaxBytesPerRecv);
+		bytesRead = udpSocket->readFromSocketWithNoBlock(&(buffer.data())[(i) * (MaxBytesPerRecv)], MaxBytesPerRecv);
+		std::cout << "Client: read from socket" << std::endl;
+
+		i++;
+		totalSize = oldSize + bytesRead;
+	} while (bytesRead > 0);
+
+	buffer.resize(totalSize + 1);
+	buffer[totalSize+1] = '\0';
+	if(totalSize<=0){
+		return nullptr;
+	}
+
+	Message* resultM = new Message(buffer.data());
+	std::cout << "Client: read from socket the following message " + resultM->toStirng() << std::endl;
+
 	return resultM;
 }
 Client::~Client() {

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Project_2.dir/libs/Base64.cpp.o"
+  "CMakeFiles/Project_2.dir/client.cpp.o"
+  "CMakeFiles/Project_2.dir/libs/base64.cpp.o"
   "CMakeFiles/Project_2.dir/main.cpp.o"
+  "CMakeFiles/Project_2.dir/server.cpp.o"
   "CMakeFiles/Project_2.dir/src/Client.cpp.o"
   "CMakeFiles/Project_2.dir/src/Message.cpp.o"
   "CMakeFiles/Project_2.dir/src/Server.cpp.o"

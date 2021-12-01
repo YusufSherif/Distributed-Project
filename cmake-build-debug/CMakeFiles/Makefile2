@@ -73,7 +73,8 @@ CMAKE_BINARY_DIR = "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Pro
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Project_2.dir/all
+all: CMakeFiles/Project_2_server.dir/all
+all: CMakeFiles/Project_2_client.dir/all
 
 .PHONY : all
 
@@ -83,36 +84,64 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Project_2.dir/clean
+clean: CMakeFiles/Project_2_server.dir/clean
+clean: CMakeFiles/Project_2_client.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Project_2.dir
+# Target rules for target CMakeFiles/Project_2_server.dir
 
 # All Build rule for target.
-CMakeFiles/Project_2.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9 "Built target Project_2"
-.PHONY : CMakeFiles/Project_2.dir/all
+CMakeFiles/Project_2_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=10,11,12,13,14,15,16,17,18 "Built target Project_2_server"
+.PHONY : CMakeFiles/Project_2_server.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Project_2.dir/rule: cmake_check_build_system
+CMakeFiles/Project_2_server.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Project_2.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Project_2_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/Project_2.dir/rule
+.PHONY : CMakeFiles/Project_2_server.dir/rule
 
 # Convenience name for target.
-Project_2: CMakeFiles/Project_2.dir/rule
+Project_2_server: CMakeFiles/Project_2_server.dir/rule
 
-.PHONY : Project_2
+.PHONY : Project_2_server
 
 # clean rule for target.
-CMakeFiles/Project_2.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/clean
-.PHONY : CMakeFiles/Project_2.dir/clean
+CMakeFiles/Project_2_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/clean
+.PHONY : CMakeFiles/Project_2_server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Project_2_client.dir
+
+# All Build rule for target.
+CMakeFiles/Project_2_client.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9 "Built target Project_2_client"
+.PHONY : CMakeFiles/Project_2_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Project_2_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Project_2_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/Project_2_client.dir/rule
+
+# Convenience name for target.
+Project_2_client: CMakeFiles/Project_2_client.dir/rule
+
+.PHONY : Project_2_client
+
+# clean rule for target.
+CMakeFiles/Project_2_client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/clean
+.PHONY : CMakeFiles/Project_2_client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

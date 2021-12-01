@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Project_2">
-				<Option output="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/Project_2" prefix_auto="0" extension_auto="0"/>
+			<Target title="Project_2_server">
+				<Option output="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/Project_2_server" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -52,14 +52,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2_server"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Project_2/fast">
-				<Option output="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/Project_2" prefix_auto="0" extension_auto="0"/>
+			<Target title="Project_2_server/fast">
+				<Option output="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/Project_2_server" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -73,57 +73,116 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2_server/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project_2_client">
+				<Option output="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/Project_2_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2_client"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project_2_client/fast">
+				<Option output="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/Project_2_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2_client/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/client.cpp">
+			<Option target="Project_2_client"/>
+		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Client.h">
-			<Option target="Project_2"/>
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Message.h">
-			<Option target="Project_2"/>
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Server.h">
-			<Option target="Project_2"/>
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpClientSocket.h">
-			<Option target="Project_2"/>
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpServerSocket.h">
-			<Option target="Project_2"/>
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpSocket.h">
-			<Option target="Project_2"/>
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
-		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/Base64.cpp">
-			<Option target="Project_2"/>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.cpp">
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
-		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/Base64.h">
-			<Option target="Project_2"/>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.h">
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
-		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/main.cpp">
-			<Option target="Project_2"/>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/server.cpp">
+			<Option target="Project_2_server"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Client.cpp">
-			<Option target="Project_2"/>
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Message.cpp">
-			<Option target="Project_2"/>
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Server.cpp">
-			<Option target="Project_2"/>
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpClientSocket.cpp">
-			<Option target="Project_2"/>
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpServerSocket.cpp">
-			<Option target="Project_2"/>
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpSocket.cpp">
-			<Option target="Project_2"/>
+			<Option target="Project_2_server"/>
+			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

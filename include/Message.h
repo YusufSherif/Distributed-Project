@@ -3,6 +3,7 @@
 
 #include <cstdio>
 #include <sstream>
+#include <string>
 #include "../libs/base64.h"
 
 enum MessageType { Request, Reply };
@@ -14,7 +15,7 @@ private:
 	size_t message_size;
 	int rpc_id;
 public:
-	Message(int operation, void *p_message, size_t p_message_size, int p_rpc_id);
+	Message(int operation, const void *p_message, size_t p_message_size, int p_rpc_id);
 	Message(std::string marshalled_base64);
 	std::string marshal();
 	int getOperation();

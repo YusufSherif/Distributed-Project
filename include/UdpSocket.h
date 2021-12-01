@@ -11,6 +11,7 @@
 #include <dns_util.h>
 #include <cstring>
 #include <unistd.h>
+#include <future>
 
 class UDPSocket
 {
@@ -28,8 +29,8 @@ public:
 	UDPSocket ();
 	void setFilterAddress (char * _filterAddress);
 	char * getFilterAddress ();
-	virtual bool initializeServer (char * _myAddr, int _myPort);
-	virtual bool initializeClient (char * _peerAddr, int _peerPort);
+	virtual bool initializeServer (const char *_myAddr, int _myPort);
+	virtual bool initializeClient (const char * _peerAddr, int _peerPort);
 	int writeToSocket (const char * buffer, int maxBytes );
 	int writeToSocketAndWait (char * buffer, int maxBytes,int microSec );
 	int readFromSocketWithNoBlock (char * buffer, int maxBytes );

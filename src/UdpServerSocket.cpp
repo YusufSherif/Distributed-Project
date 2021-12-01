@@ -7,7 +7,7 @@
 UDPServerSocket::UDPServerSocket() {
 
 }
-bool UDPServerSocket::initializeServer(char *_myAddr, int _myPort) {
+bool UDPServerSocket::initializeServer(const char *_myAddr, int _myPort) {
 	return UDPSocket::initializeServer(_myAddr, _myPort);
 }
 UDPServerSocket::~UDPServerSocket() {

@@ -1,0 +1,68 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/client.cpp
+include/Client.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Client.h
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Client.h
+UdpClientSocket.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpClientSocket.h
+Message.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Message.h
+vector
+-
+iostream
+-
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Message.h
+cstdio
+-
+sstream
+-
+string
+-
+../libs/base64.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.h
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpClientSocket.h
+UdpSocket.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpSocket.h
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpSocket.h
+pthread.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+netdb.h
+-
+netinet/in.h
+-
+cstdio
+-
+stdlib.h
+-
+string
+-
+dns_util.h
+-
+cstring
+-
+unistd.h
+-
+future
+-
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.h
+string
+-
+string_view
+-
+

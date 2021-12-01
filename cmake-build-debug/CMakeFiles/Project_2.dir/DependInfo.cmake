@@ -4,8 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/Base64.cpp" "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles/Project_2.dir/libs/Base64.cpp.o"
+  "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/client.cpp" "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles/Project_2.dir/client.cpp.o"
+  "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.cpp" "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles/Project_2.dir/libs/base64.cpp.o"
   "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/main.cpp" "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles/Project_2.dir/main.cpp.o"
+  "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/server.cpp" "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles/Project_2.dir/server.cpp.o"
   "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Client.cpp" "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles/Project_2.dir/src/Client.cpp.o"
   "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Message.cpp" "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles/Project_2.dir/src/Message.cpp.o"
   "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Server.cpp" "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles/Project_2.dir/src/Server.cpp.o"

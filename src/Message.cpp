@@ -5,31 +5,37 @@
 #include <cstring>
 #include "../include/Message.h"
 
-Message::Message(int p_operation, void *p_message, size_t p_message_size, int p_rpc_id) {
-	message = new char[message_size];
-	memcpy(message, p_message, message_size);
+Message::Message(int p_operation, const void *p_message, size_t p_message_size, int p_rpc_id) {
 	operation = p_operation;
 	message_size = p_message_size;
 	rpc_id = p_rpc_id;
+	if (message_size == 0) {
+		message = NULL;
+		return;
+	}
+	message = new char[message_size];
+	memcpy(message, p_message, message_size);
 }
 Message::Message(std::string marshalled_base64) {
 	std::string str = base64_decode(marshalled_base64);
-	size_t old_index = 0;
-	size_t index = str.find('|');
-	message_type = (MessageType)(atoi(str.substr(old_index, index).c_str()));
-	old_index = index;
+	int old_index = 0;
+	int index = str.find('|');
+	message_type = (MessageType)(atoi(str.substr(old_index, index - old_index).c_str()));
+	old_index = ++index;
 	index = str.find('|', index);
-	operation = atoi(str.substr(old_index, index).c_str());
-	old_index = index;
+	operation = atoi(str.substr(old_index, index - old_index).c_str());
+	old_index = ++index;
 	index = str.find('|', index);
-	message_size = atoi(str.substr(old_index, index).c_str());
-	old_index = index;
+	message_size = atoi(str.substr(old_index, index - old_index).c_str());
+	old_index = ++index;
 	index = str.find('|', index);
-	rpc_id = atoi(str.substr(old_index, index).c_str());
+	rpc_id = atoi(str.substr(old_index, index - old_index).c_str());
 
-	old_index = index;
-	index = str.length() - 1;
-	std::string msg = str.substr(old_index, index);
+	old_index = ++index;
+	index = str.length();
+	std::string msg = str.substr(old_index, index-old_index);
+
+	message = new char[message_size];
 	memcpy(message, msg.c_str(), msg.length());
 }
 std::string Message::marshal() {
@@ -62,10 +68,12 @@ void Message::setMessageType(MessageType p_message_type) {
 	message_type = p_message_type;
 }
 Message::~Message() {
-	delete[] message;
+	if (message)
+		delete[] message;
 }
 std::string Message::toStirng() {
 	std::stringstream s;
-	s << message_type << "|" << operation << "|" << message_size << "|" << rpc_id << "|" << message;
+	s << message_type << "|" << operation << "|" << message_size << "|" << rpc_id << "|"
+	  << std::string((char *)message);
 	return s.str();
 }
