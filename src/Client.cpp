@@ -23,7 +23,7 @@ Message* Client::execute(Message *_message) {
 		const size_t oldSize = buffer.size();
 
 		buffer.resize(oldSize + MaxBytesPerRecv);
-		bytesRead = udpSocket->readFromSocketWithNoBlock(&(buffer.data())[(i) * (MaxBytesPerRecv)], MaxBytesPerRecv);
+		bytesRead = udpSocket->readFromSocketWithTimeout(&(buffer.data())[(i) * (MaxBytesPerRecv)], MaxBytesPerRecv, 2,0);
 		std::cout << "Client: read from socket" << std::endl;
 
 		i++;

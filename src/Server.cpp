@@ -15,11 +15,12 @@ Message *Server::getRequest() {
 
 		buffer.resize(oldSize + MaxBytesPerRecv);
 		bytesRead =
-		udpServerSocket->readFromSocketWithNoBlock(&(buffer.data())[(i) * (MaxBytesPerRecv)], MaxBytesPerRecv);
-		std::cout << "Server: read the following from socket " + std::string(buffer.data()) << std::endl;
+		udpServerSocket->readFromSocketWithTimeout(&(buffer.data())[(i) * (MaxBytesPerRecv)], MaxBytesPerRecv,1,0);
 		if (bytesRead == -1) {
 			std::cout << "Error occured" << std::endl;
 			break;
+		} else{
+			std::cout << "Server: read the following from socket " + std::string(buffer.data()) << std::endl;
 		}
 		i++;
 		buffer.resize(oldSize + bytesRead);

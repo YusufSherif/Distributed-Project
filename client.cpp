@@ -1,7 +1,7 @@
 #include "include/Client.h"
 
 int main(){
-	Client c("10.40.57.52", 8000);
+	Client c("127.0.0.1", 8000);
 	while (true) {
 		Message m(0, "Hello World", strlen("Hello World") + 1, 0);
 		Message* revd = c.execute(&m);

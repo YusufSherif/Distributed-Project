@@ -4,7 +4,7 @@
 #include <future>
 
 int main() {
-	Server s("10.40.57.52", 8000);
+	Server s("127.0.0.1", 8000);
 	while (true) {
 		s.serveRequest();
 		sleep(1);

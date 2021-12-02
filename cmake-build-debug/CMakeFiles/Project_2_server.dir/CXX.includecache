@@ -76,13 +76,11 @@ string
 string_view
 -
 
-/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/server.cpp
-iostream
--
-include/Client.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Client.cpp
+../include/Client.h
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Client.h
-include/Server.h
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Server.cpp
+../include/Server.h
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Server.h
-future
--
 

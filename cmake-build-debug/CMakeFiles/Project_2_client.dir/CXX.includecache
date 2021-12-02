@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/client.cpp
-include/Client.h
-/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Client.h
-
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Client.h
 UdpClientSocket.h
 /Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpClientSocket.h
@@ -65,4 +61,8 @@ string
 -
 string_view
 -
+
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Client.cpp
+../include/Client.h
+/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Client.h
 
