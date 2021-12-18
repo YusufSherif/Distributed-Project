@@ -5,7 +5,7 @@
 		<Option title="Project_2"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Boost-1.76.0\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.76.0\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug"/>
@@ -37,48 +37,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Project_2_server">
-				<Option output="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/Project_2_server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2_server"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Project_2_server/fast">
-				<Option output="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/Project_2_server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2_server/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="Project_2_client">
 				<Option output="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/Project_2_client" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug"/>
@@ -86,8 +44,12 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.4/include/opencv4"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -107,8 +69,12 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.4/include/opencv4"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -121,71 +87,196 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Project_2_server">
+				<Option output="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/Project_2_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.4/include/opencv4"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2_server"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project_2_server/fast">
+				<Option output="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/Project_2_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.4/include/opencv4"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2_server/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 9.nosync/Distributed/Project_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/client.cpp">
 			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Client.h">
-			<Option target="Project_2_server"/>
 			<Option target="Project_2_client"/>
 		</Unit>
-		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Message.h">
-			<Option target="Project_2_server"/>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Database.h">
 			<Option target="Project_2_client"/>
+			<Option target="Project_2_server"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Message.h">
+			<Option target="Project_2_client"/>
+			<Option target="Project_2_server"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/Server.h">
 			<Option target="Project_2_server"/>
-			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpClientSocket.h">
-			<Option target="Project_2_server"/>
 			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpServerSocket.h">
 			<Option target="Project_2_server"/>
-			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/UdpSocket.h">
-			<Option target="Project_2_server"/>
 			<Option target="Project_2_client"/>
+			<Option target="Project_2_server"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/imageOperations.hpp">
+			<Option target="Project_2_client"/>
+			<Option target="Project_2_server"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/include/serialization.hpp">
+			<Option target="Project_2_client"/>
+			<Option target="Project_2_server"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.cpp">
-			<Option target="Project_2_server"/>
 			<Option target="Project_2_client"/>
+			<Option target="Project_2_server"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.h">
-			<Option target="Project_2_server"/>
 			<Option target="Project_2_client"/>
+			<Option target="Project_2_server"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/nlohmann_json/json.hpp">
+			<Option target="Project_2_client"/>
+			<Option target="Project_2_server"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/server.cpp">
 			<Option target="Project_2_server"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Client.cpp">
-			<Option target="Project_2_server"/>
 			<Option target="Project_2_client"/>
 		</Unit>
-		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Message.cpp">
-			<Option target="Project_2_server"/>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Database.cpp">
 			<Option target="Project_2_client"/>
+			<Option target="Project_2_server"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Message.cpp">
+			<Option target="Project_2_client"/>
+			<Option target="Project_2_server"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Server.cpp">
 			<Option target="Project_2_server"/>
-			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpClientSocket.cpp">
-			<Option target="Project_2_server"/>
 			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpServerSocket.cpp">
 			<Option target="Project_2_server"/>
-			<Option target="Project_2_client"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpSocket.cpp">
-			<Option target="Project_2_server"/>
 			<Option target="Project_2_client"/>
+			<Option target="Project_2_server"/>
 		</Unit>
 		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/BoostDetectToolset-1.76.0.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/Boost-1.76.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Boost-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/Boost-1.76.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Boost-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_system-1.76.0/boost_system-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_system-1.76.0/boost_system-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_system-1.76.0/libboost_system-variant-mt-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_system-1.76.0/libboost_system-variant-mt-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_system-1.76.0/libboost_system-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_system-1.76.0/libboost_system-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_serialization-1.76.0/boost_serialization-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_serialization-1.76.0/boost_serialization-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_serialization-1.76.0/libboost_serialization-variant-mt-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_serialization-1.76.0/libboost_serialization-variant-mt-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_serialization-1.76.0/libboost_serialization-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/../../../../../../usr/local/lib/cmake/boost_serialization-1.76.0/libboost_serialization-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

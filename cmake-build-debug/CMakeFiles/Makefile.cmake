@@ -27,6 +27,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/yusufsherif/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/Users/yusufsherif/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/Compiler/Clang.cmake"
   "/Users/yusufsherif/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/Compiler/GNU.cmake"
+  "/Users/yusufsherif/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindBoost.cmake"
+  "/Users/yusufsherif/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake"
+  "/Users/yusufsherif/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindPackageMessage.cmake"
+  "/Users/yusufsherif/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindSQLite3.cmake"
   "/Users/yusufsherif/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/Users/yusufsherif/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/Platform/Apple-AppleClang-C.cmake"
   "/Users/yusufsherif/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/Platform/Apple-AppleClang-CXX.cmake"
@@ -37,6 +41,27 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/yusufsherif/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/Platform/Darwin.cmake"
   "/Users/yusufsherif/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/Platform/UnixPaths.cmake"
   "/Users/yusufsherif/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/ProcessorCount.cmake"
+  "/usr/local/lib/cmake/Boost-1.76.0/BoostConfig.cmake"
+  "/usr/local/lib/cmake/Boost-1.76.0/BoostConfigVersion.cmake"
+  "/usr/local/lib/cmake/BoostDetectToolset-1.76.0.cmake"
+  "/usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config-version.cmake"
+  "/usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config.cmake"
+  "/usr/local/lib/cmake/boost_serialization-1.76.0/boost_serialization-config-version.cmake"
+  "/usr/local/lib/cmake/boost_serialization-1.76.0/boost_serialization-config.cmake"
+  "/usr/local/lib/cmake/boost_serialization-1.76.0/libboost_serialization-variant-mt-shared.cmake"
+  "/usr/local/lib/cmake/boost_serialization-1.76.0/libboost_serialization-variant-mt-static.cmake"
+  "/usr/local/lib/cmake/boost_serialization-1.76.0/libboost_serialization-variant-shared.cmake"
+  "/usr/local/lib/cmake/boost_serialization-1.76.0/libboost_serialization-variant-static.cmake"
+  "/usr/local/lib/cmake/boost_system-1.76.0/boost_system-config-version.cmake"
+  "/usr/local/lib/cmake/boost_system-1.76.0/boost_system-config.cmake"
+  "/usr/local/lib/cmake/boost_system-1.76.0/libboost_system-variant-mt-shared.cmake"
+  "/usr/local/lib/cmake/boost_system-1.76.0/libboost_system-variant-mt-static.cmake"
+  "/usr/local/lib/cmake/boost_system-1.76.0/libboost_system-variant-shared.cmake"
+  "/usr/local/lib/cmake/boost_system-1.76.0/libboost_system-variant-static.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVConfig.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVModules.cmake"
   )
 
 # The corresponding makefile is:
@@ -52,6 +77,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Project_2_server.dir/DependInfo.cmake"
   "CMakeFiles/Project_2_client.dir/DependInfo.cmake"
+  "CMakeFiles/Project_2_server.dir/DependInfo.cmake"
   )

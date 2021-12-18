@@ -116,22 +116,9 @@ CMakeFiles/Project_2_server.dir/src/UdpSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_2_server.dir/src/UdpSocket.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpSocket.cpp" -o CMakeFiles/Project_2_server.dir/src/UdpSocket.cpp.s
 
-CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.o: CMakeFiles/Project_2_server.dir/flags.make
-CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.o: ../src/UdpClientSocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.o -c "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpClientSocket.cpp"
-
-CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpClientSocket.cpp" > CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.i
-
-CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpClientSocket.cpp" -o CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.s
-
 CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.o: CMakeFiles/Project_2_server.dir/flags.make
 CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.o: ../src/UdpServerSocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.o -c "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpServerSocket.cpp"
 
 CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.i: cmake_force
@@ -142,22 +129,9 @@ CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/UdpServerSocket.cpp" -o CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.s
 
-CMakeFiles/Project_2_server.dir/src/Client.cpp.o: CMakeFiles/Project_2_server.dir/flags.make
-CMakeFiles/Project_2_server.dir/src/Client.cpp.o: ../src/Client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project_2_server.dir/src/Client.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_2_server.dir/src/Client.cpp.o -c "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Client.cpp"
-
-CMakeFiles/Project_2_server.dir/src/Client.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_2_server.dir/src/Client.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Client.cpp" > CMakeFiles/Project_2_server.dir/src/Client.cpp.i
-
-CMakeFiles/Project_2_server.dir/src/Client.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_2_server.dir/src/Client.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Client.cpp" -o CMakeFiles/Project_2_server.dir/src/Client.cpp.s
-
 CMakeFiles/Project_2_server.dir/src/Server.cpp.o: CMakeFiles/Project_2_server.dir/flags.make
 CMakeFiles/Project_2_server.dir/src/Server.cpp.o: ../src/Server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project_2_server.dir/src/Server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project_2_server.dir/src/Server.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_2_server.dir/src/Server.cpp.o -c "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Server.cpp"
 
 CMakeFiles/Project_2_server.dir/src/Server.cpp.i: cmake_force
@@ -170,7 +144,7 @@ CMakeFiles/Project_2_server.dir/src/Server.cpp.s: cmake_force
 
 CMakeFiles/Project_2_server.dir/libs/base64.cpp.o: CMakeFiles/Project_2_server.dir/flags.make
 CMakeFiles/Project_2_server.dir/libs/base64.cpp.o: ../libs/base64.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project_2_server.dir/libs/base64.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project_2_server.dir/libs/base64.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_2_server.dir/libs/base64.cpp.o -c "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.cpp"
 
 CMakeFiles/Project_2_server.dir/libs/base64.cpp.i: cmake_force
@@ -181,16 +155,28 @@ CMakeFiles/Project_2_server.dir/libs/base64.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_2_server.dir/libs/base64.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/libs/base64.cpp" -o CMakeFiles/Project_2_server.dir/libs/base64.cpp.s
 
+CMakeFiles/Project_2_server.dir/src/Database.cpp.o: CMakeFiles/Project_2_server.dir/flags.make
+CMakeFiles/Project_2_server.dir/src/Database.cpp.o: ../src/Database.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project_2_server.dir/src/Database.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_2_server.dir/src/Database.cpp.o -c "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Database.cpp"
+
+CMakeFiles/Project_2_server.dir/src/Database.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_2_server.dir/src/Database.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Database.cpp" > CMakeFiles/Project_2_server.dir/src/Database.cpp.i
+
+CMakeFiles/Project_2_server.dir/src/Database.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_2_server.dir/src/Database.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/src/Database.cpp" -o CMakeFiles/Project_2_server.dir/src/Database.cpp.s
+
 # Object files for target Project_2_server
 Project_2_server_OBJECTS = \
 "CMakeFiles/Project_2_server.dir/server.cpp.o" \
 "CMakeFiles/Project_2_server.dir/src/Message.cpp.o" \
 "CMakeFiles/Project_2_server.dir/src/UdpSocket.cpp.o" \
-"CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.o" \
 "CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.o" \
-"CMakeFiles/Project_2_server.dir/src/Client.cpp.o" \
 "CMakeFiles/Project_2_server.dir/src/Server.cpp.o" \
-"CMakeFiles/Project_2_server.dir/libs/base64.cpp.o"
+"CMakeFiles/Project_2_server.dir/libs/base64.cpp.o" \
+"CMakeFiles/Project_2_server.dir/src/Database.cpp.o"
 
 # External object files for target Project_2_server
 Project_2_server_EXTERNAL_OBJECTS =
@@ -198,14 +184,72 @@ Project_2_server_EXTERNAL_OBJECTS =
 Project_2_server: CMakeFiles/Project_2_server.dir/server.cpp.o
 Project_2_server: CMakeFiles/Project_2_server.dir/src/Message.cpp.o
 Project_2_server: CMakeFiles/Project_2_server.dir/src/UdpSocket.cpp.o
-Project_2_server: CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.o
 Project_2_server: CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.o
-Project_2_server: CMakeFiles/Project_2_server.dir/src/Client.cpp.o
 Project_2_server: CMakeFiles/Project_2_server.dir/src/Server.cpp.o
 Project_2_server: CMakeFiles/Project_2_server.dir/libs/base64.cpp.o
+Project_2_server: CMakeFiles/Project_2_server.dir/src/Database.cpp.o
 Project_2_server: CMakeFiles/Project_2_server.dir/build.make
+Project_2_server: /usr/local/lib/libopencv_gapi.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_stitching.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_alphamat.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_aruco.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_barcode.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_bgsegm.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_bioinspired.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_ccalib.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_dnn_objdetect.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_dnn_superres.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_dpm.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_face.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_freetype.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_fuzzy.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_hfs.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_img_hash.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_intensity_transform.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_line_descriptor.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_mcc.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_quality.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_rapid.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_reg.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_rgbd.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_saliency.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_sfm.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_stereo.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_structured_light.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_superres.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_surface_matching.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_tracking.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_videostab.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_viz.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_wechat_qrcode.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_xfeatures2d.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_xobjdetect.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_xphoto.4.5.4.dylib
+Project_2_server: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libsqlite3.tbd
+Project_2_server: /usr/local/lib/libboost_system-mt.dylib
+Project_2_server: /usr/local/lib/libboost_serialization-mt.dylib
+Project_2_server: /usr/local/lib/libopencv_shape.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_highgui.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_datasets.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_plot.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_text.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_ml.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_phase_unwrapping.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_optflow.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_ximgproc.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_video.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_videoio.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_imgcodecs.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_objdetect.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_calib3d.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_dnn.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_features2d.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_flann.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_photo.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_imgproc.4.5.4.dylib
+Project_2_server: /usr/local/lib/libopencv_core.4.5.4.dylib
 Project_2_server: CMakeFiles/Project_2_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Project_2_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/yusufsherif/Desktop/Semester 9.nosync/Distributed/Project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Project_2_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project_2_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

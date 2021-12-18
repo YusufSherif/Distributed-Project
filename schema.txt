@@ -1,0 +1,31 @@
+-- -----------------------------------------------------
+-- Table `mydb`.`users`
+-- -----------------------------------------------------
+CREATE TABLE `users` (
+  `username` TEXT PRIMARY KEY,
+  `password` TEXT);
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`image`
+-- -----------------------------------------------------
+CREATE TABLE `image` (
+  `id` INTEGER PRIMARY KEY AUTOINCREMENT,
+  `original_image` TEXT,
+  `owner` TEXT,
+   FOREIGN KEY (`owner`) REFERENCES users(`username`)
+);
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`users_has_access`
+-- -----------------------------------------------------
+CREATE TABLE `users_has_access` (
+  `users_username` TEXT,
+  `image_id` INT,
+  `views` INT,
+  `max_views` INT,
+   PRIMARY KEY (`users_username`, `image_id`),
+   FOREIGN KEY (`users_username`) REFERENCES `users` (`username`),
+   FOREIGN KEY (`image_id`) REFERENCES `image` (`id`)
+);

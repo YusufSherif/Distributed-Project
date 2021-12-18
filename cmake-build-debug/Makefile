@@ -131,19 +131,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Project_2_server
-
-# Build rule for target.
-Project_2_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Project_2_server
-.PHONY : Project_2_server
-
-# fast build rule for target.
-Project_2_server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/build
-.PHONY : Project_2_server/fast
-
-#=============================================================================
 # Target rules for targets named Project_2_client
 
 # Build rule for target.
@@ -155,6 +142,19 @@ Project_2_client: cmake_check_build_system
 Project_2_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/build
 .PHONY : Project_2_client/fast
+
+#=============================================================================
+# Target rules for targets named Project_2_server
+
+# Build rule for target.
+Project_2_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Project_2_server
+.PHONY : Project_2_server
+
+# fast build rule for target.
+Project_2_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/build
+.PHONY : Project_2_server/fast
 
 client.o: client.cpp.o
 
@@ -189,8 +189,8 @@ libs/base64.o: libs/base64.cpp.o
 
 # target to build an object file
 libs/base64.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/libs/base64.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/libs/base64.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/libs/base64.cpp.o
 .PHONY : libs/base64.cpp.o
 
 libs/base64.i: libs/base64.cpp.i
@@ -199,8 +199,8 @@ libs/base64.i: libs/base64.cpp.i
 
 # target to preprocess a source file
 libs/base64.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/libs/base64.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/libs/base64.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/libs/base64.cpp.i
 .PHONY : libs/base64.cpp.i
 
 libs/base64.s: libs/base64.cpp.s
@@ -209,8 +209,8 @@ libs/base64.s: libs/base64.cpp.s
 
 # target to generate assembly for a file
 libs/base64.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/libs/base64.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/libs/base64.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/libs/base64.cpp.s
 .PHONY : libs/base64.cpp.s
 
 server.o: server.cpp.o
@@ -246,7 +246,6 @@ src/Client.o: src/Client.cpp.o
 
 # target to build an object file
 src/Client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Client.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/Client.cpp.o
 .PHONY : src/Client.cpp.o
 
@@ -256,7 +255,6 @@ src/Client.i: src/Client.cpp.i
 
 # target to preprocess a source file
 src/Client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Client.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/Client.cpp.i
 .PHONY : src/Client.cpp.i
 
@@ -266,9 +264,38 @@ src/Client.s: src/Client.cpp.s
 
 # target to generate assembly for a file
 src/Client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Client.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/Client.cpp.s
 .PHONY : src/Client.cpp.s
+
+src/Database.o: src/Database.cpp.o
+
+.PHONY : src/Database.o
+
+# target to build an object file
+src/Database.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/Database.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Database.cpp.o
+.PHONY : src/Database.cpp.o
+
+src/Database.i: src/Database.cpp.i
+
+.PHONY : src/Database.i
+
+# target to preprocess a source file
+src/Database.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/Database.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Database.cpp.i
+.PHONY : src/Database.cpp.i
+
+src/Database.s: src/Database.cpp.s
+
+.PHONY : src/Database.s
+
+# target to generate assembly for a file
+src/Database.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/Database.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Database.cpp.s
+.PHONY : src/Database.cpp.s
 
 src/Message.o: src/Message.cpp.o
 
@@ -276,8 +303,8 @@ src/Message.o: src/Message.cpp.o
 
 # target to build an object file
 src/Message.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Message.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/Message.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Message.cpp.o
 .PHONY : src/Message.cpp.o
 
 src/Message.i: src/Message.cpp.i
@@ -286,8 +313,8 @@ src/Message.i: src/Message.cpp.i
 
 # target to preprocess a source file
 src/Message.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Message.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/Message.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Message.cpp.i
 .PHONY : src/Message.cpp.i
 
 src/Message.s: src/Message.cpp.s
@@ -296,8 +323,8 @@ src/Message.s: src/Message.cpp.s
 
 # target to generate assembly for a file
 src/Message.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Message.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/Message.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Message.cpp.s
 .PHONY : src/Message.cpp.s
 
 src/Server.o: src/Server.cpp.o
@@ -307,7 +334,6 @@ src/Server.o: src/Server.cpp.o
 # target to build an object file
 src/Server.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Server.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/Server.cpp.o
 .PHONY : src/Server.cpp.o
 
 src/Server.i: src/Server.cpp.i
@@ -317,7 +343,6 @@ src/Server.i: src/Server.cpp.i
 # target to preprocess a source file
 src/Server.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Server.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/Server.cpp.i
 .PHONY : src/Server.cpp.i
 
 src/Server.s: src/Server.cpp.s
@@ -327,7 +352,6 @@ src/Server.s: src/Server.cpp.s
 # target to generate assembly for a file
 src/Server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/Server.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/Server.cpp.s
 .PHONY : src/Server.cpp.s
 
 src/UdpClientSocket.o: src/UdpClientSocket.cpp.o
@@ -336,7 +360,6 @@ src/UdpClientSocket.o: src/UdpClientSocket.cpp.o
 
 # target to build an object file
 src/UdpClientSocket.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/UdpClientSocket.cpp.o
 .PHONY : src/UdpClientSocket.cpp.o
 
@@ -346,7 +369,6 @@ src/UdpClientSocket.i: src/UdpClientSocket.cpp.i
 
 # target to preprocess a source file
 src/UdpClientSocket.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/UdpClientSocket.cpp.i
 .PHONY : src/UdpClientSocket.cpp.i
 
@@ -356,7 +378,6 @@ src/UdpClientSocket.s: src/UdpClientSocket.cpp.s
 
 # target to generate assembly for a file
 src/UdpClientSocket.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/UdpClientSocket.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/UdpClientSocket.cpp.s
 .PHONY : src/UdpClientSocket.cpp.s
 
@@ -367,7 +388,6 @@ src/UdpServerSocket.o: src/UdpServerSocket.cpp.o
 # target to build an object file
 src/UdpServerSocket.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/UdpServerSocket.cpp.o
 .PHONY : src/UdpServerSocket.cpp.o
 
 src/UdpServerSocket.i: src/UdpServerSocket.cpp.i
@@ -377,7 +397,6 @@ src/UdpServerSocket.i: src/UdpServerSocket.cpp.i
 # target to preprocess a source file
 src/UdpServerSocket.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/UdpServerSocket.cpp.i
 .PHONY : src/UdpServerSocket.cpp.i
 
 src/UdpServerSocket.s: src/UdpServerSocket.cpp.s
@@ -387,7 +406,6 @@ src/UdpServerSocket.s: src/UdpServerSocket.cpp.s
 # target to generate assembly for a file
 src/UdpServerSocket.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/UdpServerSocket.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/UdpServerSocket.cpp.s
 .PHONY : src/UdpServerSocket.cpp.s
 
 src/UdpSocket.o: src/UdpSocket.cpp.o
@@ -396,8 +414,8 @@ src/UdpSocket.o: src/UdpSocket.cpp.o
 
 # target to build an object file
 src/UdpSocket.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/UdpSocket.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/UdpSocket.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/UdpSocket.cpp.o
 .PHONY : src/UdpSocket.cpp.o
 
 src/UdpSocket.i: src/UdpSocket.cpp.i
@@ -406,8 +424,8 @@ src/UdpSocket.i: src/UdpSocket.cpp.i
 
 # target to preprocess a source file
 src/UdpSocket.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/UdpSocket.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/UdpSocket.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/UdpSocket.cpp.i
 .PHONY : src/UdpSocket.cpp.i
 
 src/UdpSocket.s: src/UdpSocket.cpp.s
@@ -416,8 +434,8 @@ src/UdpSocket.s: src/UdpSocket.cpp.s
 
 # target to generate assembly for a file
 src/UdpSocket.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/UdpSocket.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_client.dir/build.make CMakeFiles/Project_2_client.dir/src/UdpSocket.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_2_server.dir/build.make CMakeFiles/Project_2_server.dir/src/UdpSocket.cpp.s
 .PHONY : src/UdpSocket.cpp.s
 
 # Help Target
@@ -442,6 +460,9 @@ help:
 	@echo "... src/Client.o"
 	@echo "... src/Client.i"
 	@echo "... src/Client.s"
+	@echo "... src/Database.o"
+	@echo "... src/Database.i"
+	@echo "... src/Database.s"
 	@echo "... src/Message.o"
 	@echo "... src/Message.i"
 	@echo "... src/Message.s"

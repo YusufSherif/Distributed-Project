@@ -10,21 +10,21 @@ enum MessageType { Request, Reply };
 class Message {
 private:
 	MessageType message_type;
-	int operation;
-	void *message;
-	size_t message_size;
+	std::string operation;
+	std::string payload;
 	int rpc_id;
 public:
-	Message(int operation, const void *p_message, size_t p_message_size, int p_rpc_id);
-	Message(std::string marshalled_base64);
+	Message();
+	Message(MessageType p_message_type, const std::string& operation, const std::string& p_message, int p_rpc_id);
+	Message(const std::string& marshalled_base64);
 	std::string marshal();
-	int getOperation();
+	std::string getOperation();
 	int getRPCId();
-	void *getMessage();
+	std::string getMessage();
 	size_t getMessageSize();
 	MessageType getMessageType();
-	void setOperation(int _operation);
-	void setMessage(void *message, size_t message_size);
+	void setOperation(const std::string& _operation);
+	void setPayload(const std::string &message);
 	void setMessageType(MessageType message_type);
 	std::string toStirng();
 	~Message();

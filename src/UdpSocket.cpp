@@ -32,11 +32,23 @@ bool UDPSocket::initializeClient(const char *_peerAddr, int _peerPort) {
 int UDPSocket::writeToSocket(const char *buffer, int maxBytes) {
 	std::string buf(buffer);
 
-	int numberOfBytesSent = sendto(sock, buf.c_str(), buf.length() + 1, 0, (sockaddr *)&peerAddr, sizeof(peerAddr));
-	if (numberOfBytesSent == -1) {
-		perror("Could not send bytes!");
-		return -1;
-	}
+	int remainingBytes = buf.length();
+	int numberOfBytesSent = 0;
+	int i = 0;
+
+	do {
+		int l_numberOfBytesSent = sendto(sock, &(buf.c_str()[(i) * (maxBytes)]), maxBytes, 0, (sockaddr *)&peerAddr, sizeof(peerAddr));
+		if (l_numberOfBytesSent == -1) {
+			perror("Could not send bytes!");
+			return -1;
+		} else{
+			numberOfBytesSent+=l_numberOfBytesSent;
+			remainingBytes-=l_numberOfBytesSent;
+			i++;
+			continue;
+		}
+	} while (remainingBytes > 0);
+
 	return numberOfBytesSent;
 }
 int UDPSocket::writeToSocketAndWait(char *buffer, int maxBytes, int microSec) {
